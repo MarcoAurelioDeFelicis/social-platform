@@ -2,10 +2,10 @@ M3
 
 # DB Social media
 
-NOME COLONNA                      TIPO                               ATTRIBUTI                              INDICI  
+NOME COLONNA                      TIPO                               ATTRIBUTI               INDICI  
 
-USER                                                                              
-user_id                           int                                AUTO_INCREMENT                          pk
+USERs                                                                            
+user_id                           int                                AUTO_INCREMENT           pk
 nickname                          varchar(50)                        unique, not null 
 u_nome                            varchar(100)                       not null
 u_e-mail                          mail                               not null
@@ -15,7 +15,7 @@ u_data_nascita                    year                               not null
 data_iscrizione                   year                               not null
 modifica_profilo                  year                               null
 POSTS
-post_id                           int                                AUTO_INCREMENT                          pK
+post_id                           int                                AUTO_INCREMENT           pK
 titolo_post                       varchar (20)                       null
 data_post                         year                               not null
 orario_post                       hour                               not null
@@ -24,16 +24,16 @@ foto_post                         boolean                            default (fa
 txt_post                          boolean                            default (false)
 modifica_post                     year                               null
 LIKES                                             
-id_like                           int                                AUTO_INCREMENT                          pK
+id_like                           int                                AUTO_INCREMENT           pK
 data_like                         year                               not null
 visible_like                      boolean                            default (true)
 COMMENT
-id_comment                        int                                AUTO_INCREMENT                          pK
+id_comment                        int                                AUTO_INCREMENT           pK
 data_comment                      year                               not null
 orario_comment                    hour                               not null
 modifica_comment                  year                               null
 TAGS                                          
-id_tag                            int                                AUTO_INCREMENT                          pK          
+id_tag                            int                                AUTO_INCREMENT           pK          
 new_tag                           boolean                            default (true)
 type_tag                          varchar(30)                        not null
 data_tag                          year                               not null
